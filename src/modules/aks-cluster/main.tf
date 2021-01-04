@@ -20,7 +20,7 @@ resource "azurerm_kubernetes_cluster" "cluster" {
 
     tags = merge(
     {
-       "environment" = "runitoncloud"
+       "environment" = "test-aks-terraform"
     },
     {
       "aadssh" = "True"
@@ -111,6 +111,3 @@ resource "azurerm_monitor_diagnostic_setting" "aks_cluster" {
     }
   }
 }
-
-
-

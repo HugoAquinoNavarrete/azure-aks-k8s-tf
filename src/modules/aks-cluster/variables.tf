@@ -92,9 +92,3 @@ variable "default_pool_type" {
   default     = "VirtualMachineScaleSets"
 }
 
-
-
-
-
-
-

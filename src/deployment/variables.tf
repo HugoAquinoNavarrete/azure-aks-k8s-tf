@@ -9,22 +9,22 @@ variable "node_count" {
 
 variable "dns_prefix" {
   description = "DNS Suffix"
-  default     = "runitoncloud"
+  default     = "test-aks-terraform"
 }
 
 variable cluster_name {
   description = "AKS cluster name"
-  default     = "runItOnCloud"
+  default     = "Test-AKS-Terraform"
 }
 
 variable resource_group_name {
   description = "name of the resource group to deploy AKS cluster in"
-  default     = "runitoncloud"
+  default     = "test-aks-terraform"
 }
 
 variable location {
   description = "azure location to deploy resources"
-  default     = "westeurope"
+  default     = "eastus"
 }
 
 variable log_analytics_workspace_name {
@@ -48,7 +48,7 @@ variable subnet_name {
 
 variable vnet_name {
   description = "vnet id where the nodes will be deployed"
-  default     = "runitoncloud-vnet"
+  default     = "test-aks-terraform-vnet"
 }
 
 variable subnet_cidr {
@@ -58,7 +58,7 @@ variable subnet_cidr {
 
 variable kubernetes_version {
   description = "version of the kubernetes cluster"
-  default     = "1.16.10"
+  default     = "1.18.10"
 }
 
 variable "vm_size" {
@@ -88,16 +88,3 @@ variable "max_count" {
   default     = 2
   description = "Maximum Node Count"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
