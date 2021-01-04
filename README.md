@@ -85,6 +85,13 @@ var.client_secret
 
 Pega el valor del `Client secret` creado
 
+Si deseas que el script no te pregunte por los valores `var.client_id` y `var.client_secret`, estos son los pasos a seguir:
+
+````
+export TF_VAR_client_id=<valor_storage_account_name>
+export TF_VAR_client_secret=<valor_key1> 
+````
+
 La siguiente salida aparecerá en pantalla con el detalle de la infraestructura a ser creada:
 
 ````
@@ -133,7 +140,7 @@ om/error?code=7000215\"})"
 
 ````
 
-Entonces destruye la infraestructura creada con `terraform destroy` (el script te pedira el `Application (client) ID` y el `Client secret`), a la pregunta del script indica `yes`:
+Entonces destruye la infraestructura creada con `terraform destroy` (el script te pedirá el `Application (client) ID` y el `Client secret`), a la pregunta del script indica `yes`:
 
 ````
 An execution plan has been generated and is shown below.
@@ -276,7 +283,7 @@ Releasing state lock. This may take a few moments...
 
 -----
 
-* Valida en el portal de Azure que el cluster este creado y ejecuta algunos comando desde la línea de comando para validar que este funcionando correctamente
+* Valida en el portal de Azure que el cluster este creado y ejecuta algunos comando desde la línea de comando para validar que este funcionando correctamente:
 
 ````
 az aks install-cli
@@ -287,7 +294,7 @@ kubectl get deployments --all-namespaces=true
 
 -----
 
-* Para eliminar la infraestructura ejecuta `terraform destroy` (el script te pedira el `Application (client) ID` y el `Client secret`), a la pregunta del script indica `yes`:
+* Para eliminar la infraestructura, ejecuta `terraform destroy` (el script te pedirá el `Application (client) ID` y el `Client secret`), a la pregunta del script indica `yes`:
 
 ````
 Acquiring state lock. This may take a few moments...
