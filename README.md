@@ -12,7 +12,7 @@
 * Crea un `storage account` en el portal Azure. Copia el valor de `Storage account name` y `key1`
 * Nuevamente desde el portal de Azure crea dentro de `Azure Active Directory` -> `App registrations` una application y guarda el valor de `Application (client) ID`. Una vez creado ve a `Certificates & secrets`, crea un Secreto y almacena el valor `Value`
 * Desde la línea de comando ejecuta el siguiente comando:
-`az storage container create -n tfstate --account-name <valor_storage_account_name> --account-key <valor_key1`
+`az storage container create -n tfstate --account-name <valor_storage_account_name> --account-key <valor_key1>`
 
 -----
 
