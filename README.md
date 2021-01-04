@@ -1,8 +1,9 @@
 # Crea un cluster Kubernetes con Azure Kubernetes Service (AKS) usando Terraform
 
-Basado en el repositorio de AymenSegn `https://github.com/AymenSegni/azure-aks-k8s-tf`
-En este artículo hay detalles de como levantar el cluster `http://aymen-segni.com/index.php/2019/12/24/create-a-kubernetes-cluster-with-azure-aks-using-terraform/`
-Ajustado por Hugo Aquino para seguir haciendo pruebas
+* Basado en el repositorio de AymenSegn `https://github.com/AymenSegni/azure-aks-k8s-tf`. 
+* En este artículo hay detalles de como levantar el cluster `http://aymen-segni.com/index.php/2019/12/24/create-a-kubernetes-cluster-with-azure-aks-using-terraform/`. 
+* Ajustado por Hugo Aquino para seguir haciendo pruebas
+* Enero 2021
 
 -----
 
@@ -73,7 +74,7 @@ var.client_id
   Enter a value:
 ````
 
-Copia el valor `Application (client) ID`
+Pega el valor `Application (client) ID`
 
 y a la siguiente consulta:
 
@@ -82,7 +83,7 @@ var.client_secret
   Enter a value:
 ````
 
-Copia el valor del `Client secret` creado
+Pega el valor del `Client secret` creado
 
 La siguiente salida aparecerá en pantalla con el detalle de la infraestructura a ser creada:
 
